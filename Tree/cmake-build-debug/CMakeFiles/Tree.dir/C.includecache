@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/choigaeun/CLionProjects/Tree/TreeNode.h
+
+/Users/choigaeun/CLionProjects/Tree/queue.c
+stdio.h
+-
+stdlib.h
+-
+queue.h
+/Users/choigaeun/CLionProjects/Tree/queue.h
+
+/Users/choigaeun/CLionProjects/Tree/queue.h
+TreeNode.h
+/Users/choigaeun/CLionProjects/Tree/TreeNode.h
+

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/choigaeun/CLionProjects/DLinkedList/dlinkedlist.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+dlinkedlist.h
+/Users/choigaeun/CLionProjects/DLinkedList/dlinkedlist.h
+
+/Users/choigaeun/CLionProjects/DLinkedList/dlinkedlist.h
+
