@@ -61,19 +61,16 @@ void delete_Node(TreeNode *node, int key, int is_root){
             } else {
                 node->parent->left = NULL;
             }
-            free(node);
         }
         // 하나의 서브트리만 갖는 경우 ( 오른쪽 트리만 갖는 경우)
         else if(node->left == NULL){
             node->right->parent = node->parent;
             node->parent->right = node->right;
-            free(node);
         }
         // 하나의 서브트리만 갖는 경우 ( 왼쪽 트리만 갖는 경우)
         else if(node->right == NULL){
             node->left->parent = node->parent;
             node->parent->left = node->left;
-            free(node);
         }
         // 중간에 있는 노드를 삭제하는 경우
         else {
@@ -86,6 +83,7 @@ void delete_Node(TreeNode *node, int key, int is_root){
                 }
             }
         }
+        free(node);
     }
 }
 

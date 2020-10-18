@@ -24,9 +24,14 @@ void delete(Tree *t, int key){
     if(t->root == NULL) printf("삭제할 노드가 없습니다");
     else {
         if(t->root->key == key) {
-            TreeNode* tmp = t->root;
-            delete_Node(t->root, key, 1);
-            t->root = tmp->right;
+            if(t->root->left == NULL && t->root->right == NULL){
+                free(t->root);
+                t->root = NULL;
+            } else {
+                TreeNode *tmp = t->root;
+                delete_Node(t->root, key, 1);
+                t->root = tmp->right;
+            }
         }
         else delete_Node(t->root, key, 0);
     }

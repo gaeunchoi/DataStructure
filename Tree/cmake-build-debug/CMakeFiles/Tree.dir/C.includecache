@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/choigaeun/CLionProjects/Tree/Tree.c
-stdio.h
--
-Tree.h
-/Users/choigaeun/CLionProjects/Tree/Tree.h
-
 /Users/choigaeun/CLionProjects/Tree/Tree.h
 TreeNode.h
 /Users/choigaeun/CLionProjects/Tree/TreeNode.h
@@ -30,10 +24,6 @@ TreeNode.h
 chicken.h
 /Users/choigaeun/CLionProjects/Tree/chicken.h
 
-/Users/choigaeun/CLionProjects/Tree/chicken.c
-chicken.h
-/Users/choigaeun/CLionProjects/Tree/chicken.h
-
 /Users/choigaeun/CLionProjects/Tree/chicken.h
 stdio.h
 -
@@ -45,14 +35,6 @@ stdio.h
 -
 Tree.h
 /Users/choigaeun/CLionProjects/Tree/Tree.h
-
-/Users/choigaeun/CLionProjects/Tree/queue.c
-stdio.h
--
-stdlib.h
--
-queue.h
-/Users/choigaeun/CLionProjects/Tree/queue.h
 
 /Users/choigaeun/CLionProjects/Tree/queue.h
 TreeNode.h
