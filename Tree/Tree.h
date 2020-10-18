@@ -12,15 +12,13 @@ typedef struct Tree{
 }Tree;
 
 void init(Tree* t);
-void insert(Tree *t, element key);
-element delete(Tree *t, element key);
-void search(Tree *t, element key);
-
+void insert(Tree *t, int key, element data);
+void delete(Tree *t, int key);
+TreeNode* search(Tree *t, int key);
 void preorder(TreeNode *node);
 void inorder(TreeNode *node);
 void postorder(TreeNode *node);
 void levelorder(TreeNode *node);
-
 void traversal(void (*order)(TreeNode *node), TreeNode *node);
 
 #endif //TREE_TREE_H

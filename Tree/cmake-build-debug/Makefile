@@ -197,6 +197,33 @@ TreeNode.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/TreeNode.c.s
 .PHONY : TreeNode.c.s
 
+chicken.o: chicken.c.o
+
+.PHONY : chicken.o
+
+# target to build an object file
+chicken.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/chicken.c.o
+.PHONY : chicken.c.o
+
+chicken.i: chicken.c.i
+
+.PHONY : chicken.i
+
+# target to preprocess a source file
+chicken.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/chicken.c.i
+.PHONY : chicken.c.i
+
+chicken.s: chicken.c.s
+
+.PHONY : chicken.s
+
+# target to generate assembly for a file
+chicken.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/chicken.c.s
+.PHONY : chicken.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -266,6 +293,9 @@ help:
 	@echo "... TreeNode.o"
 	@echo "... TreeNode.i"
 	@echo "... TreeNode.s"
+	@echo "... chicken.o"
+	@echo "... chicken.i"
+	@echo "... chicken.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

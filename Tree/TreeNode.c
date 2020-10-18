@@ -5,42 +5,54 @@
 #include <stdlib.h>
 #include "TreeNode.h"
 
-void print(TreeNode *node){
-    printf("Node key : %d\n", node->key);
-}
-
-TreeNode* createNode(element key){
+TreeNode* createNode(int key, element data){
     TreeNode* new = (TreeNode*)malloc(sizeof(TreeNode));
     new->key = key;
+    new->data = data;
     new->left = new->right = new->parent = NULL;
     return new;
 }
 
-void insert_Node(TreeNode *node, element key){
+void insert_Node(TreeNode *node, TreeNode* new){
     // 트리에 왼쪽에 삽입하는 경우
-    if(key < node->key) {
+    if(new->key < node->key) {
         if(node->left == NULL) {
-            TreeNode* tmp = createNode(key);
+            TreeNode* tmp = new;
             node->left = tmp;
             tmp->parent = node;
         }
-        else insert_Node(node->left, key);
+        else insert_Node(node->left, new);
     }
     else {
         if(node->right == NULL) {
-            TreeNode* tmp = createNode(key);
+            TreeNode* tmp = new;
             node->right = tmp;
             tmp->parent = node;
         }
-        else insert_Node(node->right, key);
+        else insert_Node(node->right, new);
     }
 }
 
-void delete_Node(TreeNode *node, element key){
+TreeNode* find_min_Node(TreeNode *node){
+    while(node->left != NULL) node = node->left;
+    return node;
+}
+
+void connect_left(TreeNode *n, TreeNode *node){
+    n->left = node->left;
+    node->left->parent = n;
+}
+
+void connect_right(TreeNode *n, TreeNode *node){
+    n->right = node->left;
+    node->left->parent = n;
+}
+
+void delete_Node(TreeNode *node, int key, int is_root){
     if(key < node->key) {
-        delete_Node(node->left, key);
+        delete_Node(node->left, key, is_root);
     } else if(key > node->key){
-        delete_Node(node->right, key);
+        delete_Node(node->right, key, is_root);
     } else {
         // 단말노드인 경우
         if(node->left == NULL && node->right == NULL){
@@ -49,56 +61,93 @@ void delete_Node(TreeNode *node, element key){
             } else {
                 node->parent->left = NULL;
             }
+            free(node);
         }
-        // 하나의 서브트리만 갖는 경우
-        else if(node->left == NULL || node->right == NULL){
-            if(node->left == NULL){
-                node->right->parent = node->parent;
-                node->parent->right = node->right;
-            } else if (node->right == NULL){
-                node->left->parent = node->parent;
-                node->parent->left = node->left;
-            }
+        // 하나의 서브트리만 갖는 경우 ( 오른쪽 트리만 갖는 경우)
+        else if(node->left == NULL){
+            node->right->parent = node->parent;
+            node->parent->right = node->right;
+            free(node);
+        }
+        // 하나의 서브트리만 갖는 경우 ( 왼쪽 트리만 갖는 경우)
+        else if(node->right == NULL){
+            node->left->parent = node->parent;
+            node->parent->left = node->left;
+            free(node);
         }
         // 중간에 있는 노드를 삭제하는 경우
         else {
-            TreeNode *n = node->right;
-            n->parent = node->parent;
-            if(node->parent->key > node->right->key){
-                node->parent->left = n;
-            } else {
-                node->parent->right = n;
-            }
-
-            if(n->left == NULL) {
-                n->left = node->left;
-                node->left->parent = n->left;
-            } else {
-                while(n->left != NULL) n = n->left;
-                if(n->key > node->left->key){
-                    n->left = node->left;
-                    node->left->parent = n;
+            if(is_root) delete_Node_root(node);
+            else {
+                if(node->parent->key > node->right->key){
+                    delete_Node_left(node);
                 } else {
-                    n->right = node->left;
-                    node->right->parent = n->left;
+                    delete_Node_right(node);
                 }
             }
         }
-        free(node);
     }
 }
 
-void search_Node(TreeNode *node, element key){
+void delete_Node_root(TreeNode *node){
+    TreeNode *n = node->right;
+    n->parent = NULL;
+    if(n->left == NULL) {
+        n->left = node->left;
+        node->left->parent = n->left;
+    } else {
+        n = find_min_Node(n);
+        if(n->key > node->left->key){
+            connect_left(n, node);
+        } else {
+            connect_right(n, node);
+        }
+    }
+}
+
+void delete_Node_left(TreeNode *node){
+    TreeNode *n = node->right;
+    node->parent->left = n;
+    if(n->left == NULL) {
+        n->left = node->left;
+        node->left->parent = n->left;
+    } else {
+        n = find_min_Node(n);
+        if(n->key > node->left->key){
+            connect_left(n, node);
+        } else {
+            connect_right(n, node);
+        }
+    }
+}
+
+void delete_Node_right(TreeNode *node){
+    TreeNode *n = node->right;
+    node->parent->right = n;
+    if(n->left == NULL) {
+        n->left = node->left;
+        node->left->parent = n->left;
+    } else {
+        n = find_min_Node(n);
+        if(n->key > node->left->key){
+            connect_left(n, node);
+        } else {
+            connect_right(n, node);
+        }
+    }
+}
+
+TreeNode* search_Node(TreeNode *node, int key){
     if(node == NULL) {
         printf("해당하는 key를 가진 Data가 존재하지 않습니다.\n");
-        return;
+        return NULL;
     }
 
     if(node->key < key){
-        search_Node(node->right, key);
+        return search_Node(node->right, key);
     } else if(node->key > key) {
-        search_Node(node->left, key);
+        return search_Node(node->left, key);
     } else{
-        printf("해당하는 key를 가진 Data가 존재합니다.\n");
+        return node;
     }
 }

@@ -90,6 +90,12 @@
 		<Unit filename="/Users/choigaeun/CLionProjects/Tree/TreeNode.h">
 			<Option target="Tree"/>
 		</Unit>
+		<Unit filename="/Users/choigaeun/CLionProjects/Tree/chicken.c">
+			<Option target="Tree"/>
+		</Unit>
+		<Unit filename="/Users/choigaeun/CLionProjects/Tree/chicken.h">
+			<Option target="Tree"/>
+		</Unit>
 		<Unit filename="/Users/choigaeun/CLionProjects/Tree/main.c">
 			<Option target="Tree"/>
 		</Unit>

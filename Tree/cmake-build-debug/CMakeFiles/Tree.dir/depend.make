@@ -4,17 +4,24 @@
 CMakeFiles/Tree.dir/Tree.c.o: ../Tree.c
 CMakeFiles/Tree.dir/Tree.c.o: ../Tree.h
 CMakeFiles/Tree.dir/Tree.c.o: ../TreeNode.h
+CMakeFiles/Tree.dir/Tree.c.o: ../chicken.h
 CMakeFiles/Tree.dir/Tree.c.o: ../queue.h
 
 CMakeFiles/Tree.dir/TreeNode.c.o: ../TreeNode.c
 CMakeFiles/Tree.dir/TreeNode.c.o: ../TreeNode.h
+CMakeFiles/Tree.dir/TreeNode.c.o: ../chicken.h
+
+CMakeFiles/Tree.dir/chicken.c.o: ../chicken.c
+CMakeFiles/Tree.dir/chicken.c.o: ../chicken.h
 
 CMakeFiles/Tree.dir/main.c.o: ../Tree.h
 CMakeFiles/Tree.dir/main.c.o: ../TreeNode.h
+CMakeFiles/Tree.dir/main.c.o: ../chicken.h
 CMakeFiles/Tree.dir/main.c.o: ../main.c
 CMakeFiles/Tree.dir/main.c.o: ../queue.h
 
 CMakeFiles/Tree.dir/queue.c.o: ../TreeNode.h
+CMakeFiles/Tree.dir/queue.c.o: ../chicken.h
 CMakeFiles/Tree.dir/queue.c.o: ../queue.c
 CMakeFiles/Tree.dir/queue.c.o: ../queue.h
 

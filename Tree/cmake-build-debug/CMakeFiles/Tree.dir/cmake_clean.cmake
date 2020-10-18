@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Tree.dir/Tree.c.o"
   "CMakeFiles/Tree.dir/TreeNode.c.o"
+  "CMakeFiles/Tree.dir/chicken.c.o"
   "CMakeFiles/Tree.dir/main.c.o"
   "CMakeFiles/Tree.dir/queue.c.o"
   "Tree"

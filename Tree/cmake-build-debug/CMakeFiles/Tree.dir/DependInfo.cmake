@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/choigaeun/CLionProjects/Tree/Tree.c" "/Users/choigaeun/CLionProjects/Tree/cmake-build-debug/CMakeFiles/Tree.dir/Tree.c.o"
   "/Users/choigaeun/CLionProjects/Tree/TreeNode.c" "/Users/choigaeun/CLionProjects/Tree/cmake-build-debug/CMakeFiles/Tree.dir/TreeNode.c.o"
+  "/Users/choigaeun/CLionProjects/Tree/chicken.c" "/Users/choigaeun/CLionProjects/Tree/cmake-build-debug/CMakeFiles/Tree.dir/chicken.c.o"
   "/Users/choigaeun/CLionProjects/Tree/main.c" "/Users/choigaeun/CLionProjects/Tree/cmake-build-debug/CMakeFiles/Tree.dir/main.c.o"
   "/Users/choigaeun/CLionProjects/Tree/queue.c" "/Users/choigaeun/CLionProjects/Tree/cmake-build-debug/CMakeFiles/Tree.dir/queue.c.o"
   )

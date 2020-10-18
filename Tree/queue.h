@@ -13,7 +13,6 @@ typedef struct queueNode {
 
 typedef struct queue{
     queueNode *front, *rear;
-    int cnt;
 }queue;
 
 void init_queue(queue *q);

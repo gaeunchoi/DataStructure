@@ -8,8 +8,8 @@
 void init_queue(queue *q){
     q->front = NULL;
     q->rear = NULL;
-    q->cnt = 0;
 }
+
 int is_empty(queue *q){
     return q->front == NULL;
 }
@@ -30,7 +30,7 @@ void enqueue(queue *q, TreeNode *node){
 TreeNode* dequeue(queue *q){
     queueNode *get = q->front;
     if(is_empty(q)){
-        printf("큐가 비었어용");
+        return NULL;
     } else {
         TreeNode* tmp = get->node;
         q->front = q->front->link;
