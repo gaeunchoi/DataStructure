@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MidTerm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MidTerm">
+				<Option output="/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/MidTerm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 MidTerm"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MidTerm/fast">
+				<Option output="/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/MidTerm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 MidTerm/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/choigaeun/CLionProjects/MidTerm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/choigaeun/CLionProjects/MidTerm/User.c">
+			<Option target="MidTerm"/>
+		</Unit>
+		<Unit filename="/Users/choigaeun/CLionProjects/MidTerm/User.h">
+			<Option target="MidTerm"/>
+		</Unit>
+		<Unit filename="/Users/choigaeun/CLionProjects/MidTerm/main.c">
+			<Option target="MidTerm"/>
+		</Unit>
+		<Unit filename="/Users/choigaeun/CLionProjects/MidTerm/mainQueue.c">
+			<Option target="MidTerm"/>
+		</Unit>
+		<Unit filename="/Users/choigaeun/CLionProjects/MidTerm/mainQueue.h">
+			<Option target="MidTerm"/>
+		</Unit>
+		<Unit filename="/Users/choigaeun/CLionProjects/MidTerm/queue.c">
+			<Option target="MidTerm"/>
+		</Unit>
+		<Unit filename="/Users/choigaeun/CLionProjects/MidTerm/queue.h">
+			<Option target="MidTerm"/>
+		</Unit>
+		<Unit filename="/Users/choigaeun/CLionProjects/MidTerm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

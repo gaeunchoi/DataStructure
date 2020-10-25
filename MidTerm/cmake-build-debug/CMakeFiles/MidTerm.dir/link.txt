@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/MidTerm.dir/main.c.o CMakeFiles/MidTerm.dir/User.c.o CMakeFiles/MidTerm.dir/queue.c.o CMakeFiles/MidTerm.dir/mainQueue.c.o  -o MidTerm 
